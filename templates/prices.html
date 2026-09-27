@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Прайс — Салон красоты ELIT{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title" data-key="prices_title">Прайс-лист</h1>
+        <p class="page-subtitle" data-key="prices_subtitle">Наши услуги и кабинеты</p>
+    </div>
+</section>
+
+<section class="services container">
+
+    <a href="/prices/hair" class="service-card">
+        <div class="service-photo">
+            <img src="{{ url_for('static', filename='img/services/hair.jpg') }}" alt="Парикмахерский зал">
+        </div>
+        <h3 data-key="service_hair">Парикмахерский зал</h3>
+    </a>
+
+    <a href="/prices/nails" class="service-card">
+        <div class="service-photo">
+            <img src="{{ url_for('static', filename='img/services/nails.jpg') }}" alt="Маникюрный кабинет">
+        </div>
+        <h3 data-key="service_nails">Маникюрный кабинет</h3>
+    </a>
+
+    <a href="/prices/cosmetology" class="service-card">
+        <div class="service-photo">
+            <img src="{{ url_for('static', filename='img/services/cosmetology.jpg') }}" alt="Косметологический кабинет">
+        </div>
+        <h3 data-key="service_cosmetology">Косметологический кабинет</h3>
+    </a>
+
+    <a href="/prices/massage" class="service-card">
+        <div class="service-photo">
+            <img src="{{ url_for('static', filename='img/services/massage.jpg') }}" alt="Массажный кабинет">
+        </div>
+        <h3 data-key="service_massage">Массажный кабинет</h3>
+    </a>
+
+    <a href="/prices/lashes" class="service-card">
+        <div class="service-photo">
+            <img src="{{ url_for('static', filename='img/services/lashes.jpg') }}" alt="Наращивание ресниц и бровей">
+        </div>
+        <h3 data-key="service_lashes">Наращивание и ламинирование ресниц/бровей</h3>
+    </a>
+
+    <a href="/prices/laser" class="service-card">
+        <div class="service-photo">
+            <img src="{{ url_for('static', filename='img/services/laser.jpg') }}" alt="Лазерная эпиляция">
+        </div>
+        <h3 data-key="service_laser">Лазерная эпиляция</h3>
+    </a>
+
+</section>
+
+{% endblock %}

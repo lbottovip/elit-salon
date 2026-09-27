@@ -1,0 +1,25 @@
+{
+    "name": "Салон красоты ELIT",
+    "short_name": "ELIT",
+    "description": "Салон красоты ELIT в городе Бар, Черногория",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fbe1e7",
+    "theme_color": "#d6336c",
+    "orientation": "portrait",
+    "lang": "ru",
+    "icons": [
+        {
+            "src": "/static/img/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/static/img/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

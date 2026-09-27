@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Косметологический кабинет — Салон красоты ELIT{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title" data-key="service_cosmetology">Косметологический кабинет</h1>
+        <a href="/prices" class="back-link" data-key="back_to_prices">← Назад к прайсу</a>
+    </div>
+</section>
+
+<section class="price-photo container">
+    <img src="{{ url_for('static', filename='img/prices/cosmetology-1.jpg') }}" alt="Прайс косметологии — часть 1">
+    <img src="{{ url_for('static', filename='img/prices/cosmetology-2.jpg') }}" alt="Прайс косметологии — часть 2">
+    <a href="https://n613465.alteg.io/" target="_blank" class="btn-book btn-large" data-key="btn_book_online">Записаться онлайн</a>
+</section>
+
+{% endblock %}

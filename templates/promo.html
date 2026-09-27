@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}Акции — Салон красоты ELIT{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title" data-key="promo_title">Акции</h1>
+        <p class="page-subtitle" data-key="promo_subtitle">Специальные предложения для наших клиентов</p>
+    </div>
+</section>
+
+<!-- 🎠 КАРУСЕЛЬ АКЦИЙ -->
+<section class="promo-carousel-section container">
+
+    <div class="swiper promo-swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-1.jpg') }}" alt="Акция 1">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-2.jpg') }}" alt="Акция 2">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-3.jpg') }}" alt="Акция 3">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-4.jpg') }}" alt="Акция 4">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-5.jpg') }}" alt="Акция 5">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-6.jpg') }}" alt="Акция 6">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-7.jpg') }}" alt="Акция 7">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-8.jpg') }}" alt="Акция 8">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/promo/promo-9.jpg') }}" alt="Акция 9">
+            </div>
+
+        </div>
+
+        <!-- 🔘 СТРЕЛКИ -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- ⚪ ТОЧКИ -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- 📚 SWIPER JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.promo-swiper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 20,
+            centeredSlides: true,
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            keyboard: {
+                enabled: true,
+            },
+
+            breakpoints: {
+                0:    { slidesPerView: 1, spaceBetween: 15 },
+                768:  { slidesPerView: 1, spaceBetween: 20 },
+                1100: { slidesPerView: 1, spaceBetween: 30 },
+            },
+        });
+    });
+</script>
+
+{% endblock %}

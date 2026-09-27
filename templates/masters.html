@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}Мастера — Салон красоты ELIT{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title" data-key="masters_title">Наши мастера</h1>
+        <p class="page-subtitle" data-key="masters_subtitle">Команда профессионалов, которой можно доверять</p>
+    </div>
+</section>
+
+<section class="masters container">
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/natalia-persona.jpg') }}" alt="Наташа Персона">
+        </div>
+        <h3>Наташа Персона</h3>
+        <p class="master-role" data-key="master_natalia_p_role">Парикмахер универсал</p>
+        <p class="master-exp" data-key="master_exp_15">Опыт: 15 лет</p>
+    </div>
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/natalia-sokolova.jpg') }}" alt="Наташа Соколова">
+        </div>
+        <h3>Наташа Соколова</h3>
+        <p class="master-role" data-key="master_natalia_s_role">Женский парикмахер</p>
+        <p class="master-exp" data-key="master_exp_15_2">Опыт: 15 лет</p>
+    </div>
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/alexander.jpg') }}" alt="Александр">
+        </div>
+        <h3>Александр</h3>
+        <p class="master-role" data-key="master_alexander_role">Парикмахер / барбер</p>
+        <p class="master-exp" data-key="master_exp_7">Опыт: 7 лет</p>
+    </div>
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/olesya.jpg') }}" alt="Олеся">
+        </div>
+        <h3>Олеся</h3>
+        <p class="master-role" data-key="master_olesya_role">Мастер маникюра и педикюра (подология)</p>
+        <p class="master-exp" data-key="master_exp_12">Опыт: 12 лет</p>
+    </div>
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/elena.jpg') }}" alt="Елена">
+        </div>
+        <h3>Елена</h3>
+        <p class="master-role" data-key="master_elena_role">Мастер маникюра и педикюра (подология)</p>
+        <p class="master-exp" data-key="master_exp_15_3">Опыт: 15 лет</p>
+    </div>
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/anzhela.jpg') }}" alt="Анжела">
+        </div>
+        <h3>Анжела</h3>
+        <p class="master-role" data-key="master_anzhela_role">Аппаратная косметология</p>
+        <p class="master-exp" data-key="master_exp_20">Опыт: 20 лет</p>
+    </div>
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/lyubov.jpg') }}" alt="Любовь">
+        </div>
+        <h3>Любовь</h3>
+        <p class="master-role" data-key="master_lyubov_role">Эстетическая косметология / ламинирование бровей</p>
+        <p class="master-exp" data-key="master_exp_10">Опыт: 10 лет</p>
+    </div>
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/marina.jpg') }}" alt="Марина">
+        </div>
+        <h3>Марина</h3>
+        <p class="master-role" data-key="master_marina_role">Массажист</p>
+        <p class="master-exp" data-key="master_exp_25">Опыт: 25 лет</p>
+    </div>
+
+    <div class="master-card">
+        <div class="master-photo">
+            <img src="{{ url_for('static', filename='img/masters/irina.jpg') }}" alt="Ирина">
+        </div>
+        <h3>Ирина</h3>
+        <p class="master-role" data-key="master_irina_role">Мастер по наращиванию ресниц</p>
+        <p class="master-exp" data-key="master_exp_10_2">Опыт: 10 лет</p>
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+
+{% block title %}Главная — Салон красоты ELIT{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="container hero-wrapper">
+
+        <div class="hero-photo hero-photo-left">
+            <img src="{{ url_for('static', filename='img/hero/hero-left.jpg') }}" alt="Наши услуги">
+        </div>
+
+        <div class="hero-content">
+            <h1 data-key="hero_title">Добро пожаловать в наш салон красоты ELIT</h1>
+
+            <div class="hero-subtitle">
+                <span data-key="hero_text_1">Салон с домашней атмосферой в самом сердце города Бар.</span>
+                <span data-key="hero_text_2">Запишитесь онлайн за пару кликов!</span>
+            </div>
+
+            <a href="https://n613465.alteg.io/" target="_blank" class="btn-book btn-large" data-key="btn_book_online">Записаться онлайн</a>
+        </div>
+
+        <div class="hero-photo hero-photo-right">
+            <img src="{{ url_for('static', filename='img/hero/hero-right.jpg') }}" alt="Салон красоты ELIT">
+        </div>
+
+    </div>
+</section>
+
+<!-- 🎬 СЧЁТЧИКИ -->
+<section class="counters-section">
+    <div class="container">
+        <div class="counters-grid">
+
+            <div class="counter-card">
+                <span class="counter-number" data-target="15">0</span>
+                <span class="counter-suffix">+</span>
+                <span class="counter-label" data-key="counter_years">лет опыта</span>
+            </div>
+
+            <div class="counter-card">
+                <span class="counter-number" data-target="9">0</span>
+                <span class="counter-suffix"></span>
+                <span class="counter-label" data-key="counter_masters">мастеров</span>
+            </div>
+
+            <div class="counter-card">
+                <span class="counter-number" data-target="5000">0</span>
+                <span class="counter-suffix">+</span>
+                <span class="counter-label" data-key="counter_clients">клиентов</span>
+            </div>
+
+            <div class="counter-card">
+                <span class="counter-number" data-target="100">0</span>
+                <span class="counter-suffix">%</span>
+                <span class="counter-label" data-key="counter_quality">качество</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="about container">
+    <h2 data-key="about_title">О нас</h2>
+    <div class="about-text">
+        <span data-key="about_text_1">Мы — команда профессиональных мастеров, которая любит своё дело.</span>
+        <span data-key="about_text_2">Работаем с 2008 года.</span>
+        <span data-key="about_text_3">Приходите — будем рады видеть вас!</span>
+    </div>
+</section>
+
+<section class="video-section container">
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/A1Yp3mfORec"
+            title="Салон красоты ELIT, город Бар"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<section class="features container">
+
+    <div class="feature">
+        <div class="feature-letter">E</div>
+        <h3 data-key="feature_e_title">Опытные мастера</h3>
+        <p data-key="feature_e_text">Каждый мастер — с профильным образованием и опытом от 5 лет.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-letter">L</div>
+        <h3 data-key="feature_l_title">Качественные материалы</h3>
+        <p data-key="feature_l_text">Используем только проверенную косметику и профессиональные инструменты.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-letter">I</div>
+        <h3 data-key="feature_i_title">Индивидуальный подход</h3>
+        <p data-key="feature_i_text">Подбираем услуги и уход именно под вас — с учётом ваших пожеланий и особенностей.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-letter">T</div>
+        <h3 data-key="feature_t_title">Уютная атмосфера, приятная энергия и вкусный кофе</h3>
+        <p data-key="feature_t_text">У нас приятно находиться — вы почувствуете это с порога.</p>
+    </div>
+
+</section>
+
+<!-- ⭐ ОТЗЫВЫ КЛИЕНТОВ -->
+<section class="reviews-section">
+    <div class="container">
+        <h2 class="reviews-title" data-key="reviews_title">Отзывы клиентов</h2>
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">Отличный салон! Хожу уже 2 года — всегда чисто, уютно и профессионально. Наташа — лучший мастер!</p>
+                <div class="review-author">
+                    <div class="review-avatar">М</div>
+                    <div class="review-info">
+                        <p class="review-name">Мария</p>
+                        <p class="review-date">Сентябрь 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">Прекрасный салон! Делала маникюр у Олеси — очень аккуратно, красиво. Долго держится. Рекомендую!</p>
+                <div class="review-author">
+                    <div class="review-avatar">А</div>
+                    <div class="review-info">
+                        <p class="review-name">Анна</p>
+                        <p class="review-date">Август 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">Косметология на высшем уровне! Анжела — профессионал своего дела. Кожа после процедур — сияет!</p>
+                <div class="review-author">
+                    <div class="review-avatar">Е</div>
+                    <div class="review-info">
+                        <p class="review-name">Елена</p>
+                        <p class="review-date">Июль 2026</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
